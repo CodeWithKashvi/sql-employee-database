@@ -22,21 +22,16 @@ This project simulates an Employee Database system and includes:
 
 ## 📂 Project Structure
 
-```bash
-SQL-Employee-Database/
-│
-├── README.md
-│
-├── 01_basic_queries.sql
-├── 02_advanced_queries.sql
-├── 03_aggregate_functions.sql
-├── 04_nested_queries.sql
-│
-├── schema_creation.sql
-├── constraints_definition.sql
-│
-└── sample_data.sql
-```
+| File Name | Description |
+|------------|-------------|
+| README.md | Project documentation |
+| schema_creation.sql | Creates EMP table and defines structure |
+| constraints_definition.sql | Applies constraints and validation rules |
+| sample_data.sql | Inserts sample employee records |
+| 01_basic_queries.sql | Basic SELECT, WHERE, ORDER BY queries |
+| 02_advanced_queries.sql | Advanced filtering and conditional logic |
+| 03_aggregate_functions.sql | COUNT, SUM, AVG, MIN, MAX, GROUP BY |
+| 04_nested_queries.sql | Subqueries and nested SQL logic |
 
 ---
 
