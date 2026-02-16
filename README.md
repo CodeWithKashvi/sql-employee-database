@@ -1,6 +1,8 @@
-# SQL Employee Database
+# SQL Employee Database System
 
-A structured SQL project demonstrating relational database implementation and progressive query execution using an Employee schema.
+A structured SQL project demonstrating relational database design and progressive query implementation using an Employee schema.
+
+This project covers SQL concepts from basic filtering to advanced nested queries and full multi-table relational schema design.
 
 All queries were implemented and tested locally using SQLite in VS Code.
 
@@ -8,49 +10,59 @@ All queries were implemented and tested locally using SQLite in VS Code.
 
 ## 📌 Project Overview
 
-This project simulates an Employee Database system and includes:
+This project simulates a complete Employee Database system and includes:
 
-- Database schema creation
+- Multi-table schema creation
 - Constraint implementation
 - Sample data insertion
 - Basic SQL queries
-- Advanced filtering queries
+- Advanced filtering logic
 - Aggregate functions
 - Nested and subqueries
+- Relational table design with foreign keys
 
 ---
 
 ## 📂 Project Structure
 
-| File Name | Description |
-|------------|-------------|
-| README.md | Project documentation |
-| schema_creation.sql | Creates EMP table and defines structure |
-| constraints_definition.sql | Applies constraints and validation rules |
-| sample_data.sql | Inserts sample employee records |
-| 01_basic_queries.sql | Basic SELECT, WHERE, ORDER BY queries |
-| 02_advanced_queries.sql | Advanced filtering and conditional logic |
-| 03_aggregate_functions.sql | COUNT, SUM, AVG, MIN, MAX, GROUP BY |
-| 04_nested_queries.sql | Subqueries and nested SQL logic |
+| Module | File Name | Description |
+|--------|------------|-------------|
+| Core | README.md | Project documentation |
+| 01 | 01_basic_queries.sql | Basic SELECT, WHERE, AND, OR, IN, ORDER BY queries |
+| 02 | 02_advanced_queries.sql | Advanced filtering and conditional logic |
+| 03 | 03_aggregate_functions.sql | COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING |
+| 04 | 04_nested_queries.sql | Subqueries and advanced salary/department logic |
+| 05 | schema_creation.sql | Multi-table schema creation |
+| 05 | constraints_definition.sql | Primary key, foreign key and CHECK constraints |
+| 05 | sample_data.sql | Data insertion scripts for relational schema |
 
 ---
 
-## 🏗 Database Implementation
+## 🏗 Database Implementation (Module 05)
+
+The relational schema includes:
+
+- EMPLOYEE
+- DEPARTMENT
+- PROJECT
+- WORKS_ON
+- DEPT_LOCATIONS
 
 ### schema_creation.sql
-- Creates the EMP table
+- Creates all required tables
 - Defines data types
-- Sets primary key
+- Establishes primary keys
 
 ### constraints_definition.sql
 - Implements NOT NULL constraints
 - Applies CHECK conditions
-- Defines FOREIGN KEY constraints
+- Defines FOREIGN KEY relationships
 - Enforces data validation rules
 
 ### sample_data.sql
-- Inserts sample employee records
-- Provides structured test dataset
+- Inserts structured test data
+- Validates referential integrity
+- Populates relational tables
 
 ---
 
@@ -60,18 +72,23 @@ This project simulates an Employee Database system and includes:
 Covers:
 - SELECT statements
 - WHERE clause
-- AND / OR operators
+- Logical operators (AND / OR)
 - IN operator
 - NULL handling
 - Column aliasing
 - ORDER BY sorting
 
+---
+
 ### 02_advanced_queries.sql
 Covers:
 - Complex filtering
-- Conditional logic
 - Multi-condition queries
-- Salary and department analysis
+- Salary-based logic
+- Department-based filtering
+- Conditional expressions
+
+---
 
 ### 03_aggregate_functions.sql
 Covers:
@@ -83,13 +100,15 @@ Covers:
 - GROUP BY
 - HAVING clause
 
+---
+
 ### 04_nested_queries.sql
 Covers:
 - Subqueries
-- Salary comparison queries
-- Department-based nested logic
+- Salary comparison logic
+- Department-based nested filtering
 - Second highest salary retrieval
-- Advanced conditional filtering
+- Advanced conditional queries
 
 ---
 
@@ -107,7 +126,7 @@ Covers:
 1. Run `schema_creation.sql`
 2. Run `constraints_definition.sql`
 3. Run `sample_data.sql`
-4. Execute query files in order:
+4. Execute query modules in order:
    - 01_basic_queries.sql
    - 02_advanced_queries.sql
    - 03_aggregate_functions.sql
@@ -118,21 +137,22 @@ Covers:
 ## 📚 SQL Concepts Demonstrated
 
 - Relational schema design
-- Constraint implementation
-- Data insertion techniques
+- Primary and foreign key implementation
+- Constraint management
+- Data insertion and validation
 - Logical query construction
-- Aggregate data analysis
+- Aggregate analysis
 - Nested query execution
-- Structured query organization
+- Structured SQL organization
 
 ---
 
 ## 💡 Learning Outcome
 
-This project demonstrates structured SQL learning progression from foundational queries to advanced nested logic and constraint management.
+This project reflects structured SQL progression from foundational queries to advanced relational schema design and nested logic implementation.
 
-It reflects practical relational database execution in a local development environment.
+It demonstrates hands-on relational database execution in a local development environment.
 
 ---
 
-⭐ Feel free to explore, fork, and expand this project.
+⭐ Feel free to explore, fork, and extend this project.
