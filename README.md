@@ -2,7 +2,7 @@
 
 A structured SQL project demonstrating relational database implementation and progressive query execution using an Employee schema.
 
-This repository showcases SQL concepts from schema creation to advanced nested queries.
+All queries were implemented and tested locally using SQLite in VS Code.
 
 ---
 
@@ -18,13 +18,11 @@ This project simulates an Employee Database system and includes:
 - Aggregate functions
 - Nested and subqueries
 
-All queries were implemented and tested locally using SQLite in VS Code.
-
 ---
 
 ## 📂 Project Structure
 
-```
+```bash
 SQL-Employee-Database/
 │
 ├── README.md
@@ -37,33 +35,27 @@ SQL-Employee-Database/
 ├── schema_creation.sql
 ├── constraints_definition.sql
 │
-└── sample_data.sql 
+└── sample_data.sql
+```
+
 ---
 
 ## 🏗 Database Implementation
 
-### 1️⃣ schema_creation.sql
-Contains:
-- EMP table creation
-- Data type definitions
-- Primary key setup
+### schema_creation.sql
+- Creates the EMP table
+- Defines data types
+- Sets primary key
 
----
+### constraints_definition.sql
+- Implements NOT NULL constraints
+- Applies CHECK conditions
+- Defines FOREIGN KEY constraints
+- Enforces data validation rules
 
-### 2️⃣ constraints_definition.sql
-Implements:
-- NOT NULL constraints
-- CHECK conditions
-- FOREIGN KEY constraints
-- Data validation rules
-
----
-
-### 3️⃣ sample_data.sql
-Includes:
-- INSERT statements
-- Sample employee records
-- Structured test dataset
+### sample_data.sql
+- Inserts sample employee records
+- Provides structured test dataset
 
 ---
 
@@ -79,16 +71,12 @@ Covers:
 - Column aliasing
 - ORDER BY sorting
 
----
-
 ### 02_advanced_queries.sql
 Covers:
 - Complex filtering
 - Conditional logic
 - Multi-condition queries
 - Salary and department analysis
-
----
 
 ### 03_aggregate_functions.sql
 Covers:
@@ -99,8 +87,6 @@ Covers:
 - MAX()
 - GROUP BY
 - HAVING clause
-
----
 
 ### 04_nested_queries.sql
 Covers:
@@ -148,11 +134,10 @@ Covers:
 
 ## 💡 Learning Outcome
 
-This project reflects structured SQL learning progression from foundational queries to advanced nested logic and constraint management.
+This project demonstrates structured SQL learning progression from foundational queries to advanced nested logic and constraint management.
 
-It demonstrates hands-on relational database execution in a local development environment.
+It reflects practical relational database execution in a local development environment.
 
+---
 
-⭐ Feel free to explore, fork, and extend this project.
-
-
+⭐ Feel free to explore, fork, and expand this project.
